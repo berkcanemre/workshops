@@ -23,4 +23,10 @@ public class Vehicle {
         this.odometer = odometer;
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return String.format("VIN: %d | Year: %d | %s %s | Type: %s | Color: %s | Odometer: %,d | $%.2f",
+                vin, year, make, model, type, color, odometer, price);
+    }
 }

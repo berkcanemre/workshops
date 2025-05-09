@@ -8,7 +8,7 @@ public class DealershipFileManager {
 
     public Dealership getDealership() {
         Dealership dealership = null;
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/resources/inventory.csv"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/inventory.csv"))) {
             String line = reader.readLine(); // First line: dealership info
             if (line != null) {
                 String[] dealershipData = line.split("\\|");
