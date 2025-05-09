@@ -1,0 +1,8 @@
+--- SALES RECEIPT ---
+Date: Fri Apr 25 14:02:08 EDT 2025
+Telestrations Board Game - $17.99
+Battleship Board Game - $12.99
+Solar Powered Battery Charger - $19.99
+Total: $50.97
+Paid: $100.00
+Change: $49.03

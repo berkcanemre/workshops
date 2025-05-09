@@ -1,0 +1,7 @@
+=== SALES RECEIPT ===
+Order Date: 2025-04-25T14:12:57.713994900
+Retro Handheld Arcade x1 - $24.45
+RGB Wireless Gaming Mouse x1 - $67.45
+Total: $91.90
+Paid: $95.00
+Change: $3.10
