@@ -60,4 +60,13 @@ public class UserInterface {
         List<Vehicle> allVehicles = dealership.getAllVehicles();
         displayVehicles(allVehicles);
     }
+    private void processByPriceRequest() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter minimum price: ");
+        double min = scanner.nextDouble();
+        System.out.print("Enter maximum price: ");
+        double max = scanner.nextDouble();
+        List<Vehicle> results = dealership.getVehiclesByPrice(min, max);
+        displayVehicles(results);
+    }
 }
