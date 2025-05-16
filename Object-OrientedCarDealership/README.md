@@ -4,37 +4,35 @@ Dealership System Part-2
 
 <p align="center"> <pre> About CarDealership </pre> 
 
-A fully functional console-based Java application that simulates a car dealership's vehicle inventory system. Users can:
+A fully functional console-based Java application that simulates a car dealership's vehicle inventory system. 
 
-Search vehicles by price, year, type, etc.
+Updated with Object-Oriented Coding  
+Users can:
+- Search vehicles by price, year, type, mileage, color, and make/model
+dd or remove vehicles from inventory
 
-Add or remove vehicles from inventory
+- Save all changes persistently using CSV files
 
-View all vehicles
+- Record **sales or lease contracts** with accurate price and financing logic
 
-Save changes persistently using a CSV file
+- Persist contracts into a separate contract log file
 
 <p align="center"> <pre> Features  </pre> 
 
-List all vehicles
-
+List all vehicles       
 Find vehicles by:
+- Price range
+- Make and model
+- Year range
+- Color
+- Mileage range
+- Vehicle type (car, SUV, truck, van, etc.)
 
-Price range
-
-Make and model
-
-Year range
-
-Color
-
-Mileage range
-
-Vehicle type (car, SUV, truck, van, etc.)
-
-Add a new vehicle
-Remove a vehicle by VIN
-Save all changes to a file
+Add a new vehicle  
+Remove a vehicle by VIN  
+Sell or Lease a vehicle  
+Save all changes to an inventory file  
+Append all sales and leases to a contracts file     
 Load dealership and vehicles from a pipe-delimited file
 
 <p align="center"> <pre> Screenshots  </pre>
@@ -47,11 +45,29 @@ Error: [error](src/main/resources/Screenshots/Error.png)
 
 <p align="center"> <pre> Interesting Code Snippet  </pre>
 
-public void removeVehicle(int vin) {
-inventory.removeIf(v -> v.getVin() == vin);
-}
+This code handles both short-term and long-term financing logic dynamically
 
-// Removes matching VIN
+    public double getMonthlyPayment() {
+    if (!finance) return 0.0; // No financing if user selected NO
+
+    double totalPrice = getTotalPrice(); // Final amount including tax and fees
+    double interestRate;
+    int months;
+
+    // Determine interest and term based on total price
+    if (totalPrice >= 10000) {
+        interestRate = 0.0425; // 4.25% for loans $10,000+
+        months = 48;
+    } else {
+        interestRate = 0.0525; // 5.25% for smaller loans
+        months = 24;
+    }
+
+    double monthlyRate = interestRate / 12.0; // Monthly interest rate
+
+    // Amortization formula for equal monthly payments
+    return (totalPrice * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -months));
+    }
 
 <p align="center"> <pre> Author & Contributors </pre>
 
