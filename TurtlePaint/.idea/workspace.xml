@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7426347c-603c-4dee-99a4-d9d2055e9d13" name="Changes" comment="" />
+    <list default="true" id="91226873-a8bf-4992-8839-afcd2a2afb87" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="2xSAZmv9Vd0hmCDXlcFLDzgqt5L" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xSBHzdjm7w9fHydGZvXLM5PK9O" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,17 +30,16 @@
   "keyToString": {
     "Application.MainApp.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Student/pluralsight/workshops/TurtlePaint"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7426347c-603c-4dee-99a4-d9d2055e9d13" name="Changes" comment="" />
-      <created>1747921159904</created>
+      <changelist id="91226873-a8bf-4992-8839-afcd2a2afb87" name="Changes" comment="" />
+      <created>1747921510970</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747921159904</updated>
+      <updated>1747921510970</updated>
     </task>
     <servers />
   </component>
